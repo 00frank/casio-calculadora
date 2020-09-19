@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Casio Fx 570ES</title>
+    <link rel="stylesheet" href="calculadora/casio.css">
+</head>
+
+<body>
+    <center>
+        <div id="casio">
+            <img src="calculadora/casio-fx570es.jpg">
+            <div id="responsive">responsive-mode</div>
+            <div id="display"></div>
+            <div id="result"></div>
+            <ul>
+                <li class="number" id="n0">0</li>
+                <li class="decimal" id="decimal">.</li>
+                <li class="equal" id="equal">=</li>
+                <li class="number" id="n1">1</li>
+                <li class="number" id="n2">2</li>
+                <li class="number" id="n3">3</li>
+                <li class="sign" id="sPlus">+</li>
+                <li class="sign" id="sLess">-</li>
+                <li class="number" id="n4">4</li>
+                <li class="number" id="n5">5</li>
+                <li class="number" id="n6">6</li>
+                <li class="sign" id="sMultiply">*</li>
+                <!-- <li class="sign" id="sMultiply">x</li> -->
+                <li class="sign" id="sDivid">/</li>
+                <!-- <li class="sign" id="sDivid">÷</li> -->
+                <li class="number" id="n7">7</li>
+                <li class="number" id="n8">8</li>
+                <li class="number" id="n9">9</li>
+                <li class="DEL" id="DEL" onclick="casio.del()">DEL</li>
+                <li class="AC" id="AC" onclick="casio.ac()">AC</li>
+            </ul>
+        </div>
+    </center>
+    <script src="calculadora/casio.js"></script>
+</body>
+
+</html>

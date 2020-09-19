@@ -1,0 +1,204 @@
+* {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  list-style: none;
+  user-select: none;
+  -webkit-user-drag: none;
+}
+
+#casio {
+  /* position relative para ordenar los botones */
+  position: relative;
+  display: inline-block;
+  text-align: center;
+}
+
+#display {
+  font-family: Cambria, Times;
+  font-size: 22px;
+  position: relative;
+  text-align: left;
+  /* border: 5px solid rgb(13, 186, 230); */
+  width: 220px;
+  height: 28px;
+  bottom: 500px;
+  left: 49px;
+}
+#result {
+  font-family: Cambria, Times;
+  font-size: 20px;
+  position: relative;
+  text-align: right;
+  /* border: 5px solid rgb(113, 6, 212); */
+  width: 220px;
+  height: 28px;
+  bottom: 500px;
+  left: 42px;
+}
+
+#responsive {
+  /* responsive mode por defecto no se muestra*/
+  display: none;
+}
+
+#casio ul li {
+  font-family: Arial, Helvetica, sans-serif;
+  padding: 4px;
+  width: 30px;
+  text-align: center;
+  margin: 8px;
+  /*background negro para todos los botones, despues se cambian dependiendo el caso*/
+  background: #05070d;
+  color: #e5e5e4;
+  border: 1px solid #1b1b1b;
+  border-radius: 5px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+#casio ul li:hover {
+  color: white;
+  background: linear-gradient(#000000, #3d3d3d);
+}
+
+#casio ul li:active {
+  background: linear-gradient(#000000, #474747);
+  color: white;
+}
+
+/* ### Estilos propios de cada boton ### */
+#n0 {
+  position: absolute;
+  top: 525px; /*Linea 1*/
+  left: 31px; /*Columna 1*/
+}
+
+#n1 {
+  position: absolute;
+  top: 484px; /*Linea 2*/
+  left: 31px;
+}
+#n2 {
+  position: absolute;
+  top: 484px;
+  left: 79px; /*Columna 2*/
+}
+#n3 {
+  position: absolute;
+  top: 484px;
+  left: 127px;
+}
+#n4 {
+  position: absolute;
+  top: 443px; /*Linea 3*/
+  left: 31px;
+}
+#n5 {
+  position: absolute;
+  top: 443px;
+  left: 79px;
+}
+#n6 {
+  position: absolute;
+  top: 443px;
+  left: 127px;
+}
+#n7 {
+  position: absolute;
+  top: 400px; /*Linea 4*/
+  left: 31px;
+}
+#n8 {
+  position: absolute;
+  top: 400px;
+  left: 79px;
+}
+#n9 {
+  position: absolute;
+  top: 400px;
+  left: 127px;
+}
+#sPlus {
+  position: absolute;
+  top: 484px;
+  left: 175px; /*Columna 4*/
+}
+#sLess {
+  position: absolute;
+  top: 484px;
+  left: 223px; /*Columna 5*/
+}
+#sMultiply {
+  position: absolute;
+  top: 443px;
+  left: 175px;
+}
+#sDivid {
+  position: absolute;
+  top: 443px;
+  left: 223px;
+}
+#equal {
+  position: absolute;
+  top: 525px;
+  left: 223px;
+}
+#decimal {
+  position: absolute;
+  top: 525px;
+  left: 79px;
+}
+#DEL {
+  position: absolute;
+  top: 400px;
+  left: 175px;
+  background: #742024 !important;
+}
+#AC {
+  position: absolute;
+  top: 400px;
+  left: 223px;
+  background: #742024 !important;
+}
+#DEL:hover,
+#AC:hover {
+  background: linear-gradient(#742024, #df111c) !important;
+  color: white !important;
+}
+#DEL:active,
+#AC:active {
+  background: linear-gradient(#742024, #ff000d) !important;
+  color: white !important;
+}
+/* ### Fin de estilos propios para cada boton ### */
+
+/* Responsive mode */
+@media (max-width: 700px) {
+  #casio ul li:hover {
+    color: white;
+    background: black;
+  }
+  #casio ul li:active {
+    background: linear-gradient(#474747, #000000);
+    color: white;
+  }
+  #DEL:hover,
+  #AC:hover {
+    background: #742024 !important;
+    color: white !important;
+  }
+  #DEL:active,
+  #AC:active {
+    background: linear-gradient(#742024, #df111c) !important;
+    color: white !important;
+  }
+  #responsive {
+    /* div con texto "responsive-mode" */
+    font-size: 10px;
+    display: block;
+    position: absolute;
+    top: 92px;
+    left: 51px;
+  }
+}
